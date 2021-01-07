@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-输出结果为：
-    CCFTestResultFixValidData_release.csv
-"""
-
 import argparse
 import sys
 import os
@@ -68,8 +62,6 @@ if __name__ == '__main__':
                                 './cut_twist_process/template/fan_blurred_zheng.jpg',  # 1 反面正
                                 './cut_twist_process/template/zheng_blurred_fan.jpg',  # 2 正面反
                                 './cut_twist_process/template/zheng_blurred_zheng.jpg',  # 3 正面正
-                                './cut_twist_process/template/zheng_new.jpg',  # 4 新水印正面
-                                './cut_twist_process/template/fan_new.jpg'  # 5 新水印反面
                                 ]  # 模板图片路径
     # 切分身份证
     cut_twist_join.process_cut_twist_imgs(img_path=origin_img_path, template_names=cut_twist_template_names,
